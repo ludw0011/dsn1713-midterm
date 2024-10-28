@@ -2,12 +2,35 @@
 
 /* Set custom variables here */
 
+:root{
+  --primary-color: #2e483a;
+  --bs-light: #F6F3ED;
+} 
 
 
-
+nav {
+  background-color: var(--primary-color);
+}
 
 .navbar-brand {
-  color: #F6F3ED;
+  color: var(--bs-light)
+} 
+
+.text-light {
+  text-decoration: var(--bs-light);
+}
+
+li {
+  list-style: none;
+}
+
+.btn-primary {
+  align-items: center;
+  background-color: var(--primary-color);
+  color: var(--bs-light);
+  border:none;
+  border-radius: 0.5rem ;
+  padding: 0.75rem; 
 }
 
 body {
@@ -38,6 +61,14 @@ h1, h2, h3 {
   background-size: cover;
 }
 
+footer {
+  background-color: var(--primary-color);
+}
+
+.testimonials {
+  background-color: var(--primary-color);
+}
+
 #cta .d-flex {
   height: 400px;
 }
@@ -50,4 +81,4 @@ section:not(#hero):not(#cta){
   section:not(#hero):not(#cta){
     padding: 100px 0;
   }
-}
+ 
